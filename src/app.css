@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    background-color: theme('colors.bgLight');
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
