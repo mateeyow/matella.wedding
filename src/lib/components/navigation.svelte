@@ -8,7 +8,9 @@
 
 <Navbar class="bg-transparent fixed z-20 top-0 start-0">
 	<NavContainer>
-		<NavHamburger />
+		<div>
+			<NavHamburger menuClass="text-white" />
+		</div>
 		<NavUl class="mx-auto uppercase">
 			<NavLi class="text-white" href="#save-the-date">Save the date</NavLi>
 			<NavLi class="text-white" href="#our-story">Our story</NavLi>

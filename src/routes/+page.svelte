@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Navigation from '$lib/components/navigation.svelte';
+	import Save from '$lib/components/save.svelte';
 	import Hero from '$lib/components/hero.svelte';
 	import OurStory from '$lib/components/our-story.svelte';
 	import Venue from '$lib/components/the-venue.svelte';
@@ -13,6 +14,7 @@
 <main>
 	<Navigation />
 	<Hero />
+	<Save />
 	<OurStory />
 	<Venue />
 	<Stay />
