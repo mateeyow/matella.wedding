@@ -5,6 +5,9 @@ export default {
     extend: {
       colors: {
         bgLight: '#E9E7E1'
+      },
+      screens: {
+        'tablet': '768px',
       }
     },
   },

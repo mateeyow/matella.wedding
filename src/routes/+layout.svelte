@@ -1,6 +1,6 @@
 <script>
 	import '../app.css';
-	import bgImage from '$lib/assets/hero-bg.png';
+	import bgImage from '$lib/assets/images/hero-bg.png';
 </script>
 
 <svelte:head>

@@ -1,5 +1,5 @@
-<div id="save-the-date" class="grid-cols-2">
-	<div>
+<div id="save-the-date" class="grid lg:grid-cols-2 lg:h-svh">
+	<div class="h-svh">
 		<h3>Save the date</h3>
 		<p>Hi [name],</p>
 		<p>
@@ -20,5 +20,7 @@
 			15, 2024.
 		</p>
 	</div>
-	<div>Second</div>
+	<div
+		class="bg-[url('$lib/assets/images/save-the-date.png')] h-svh bg-bottom bg-no-repeat bg-cover"
+	></div>
 </div>
