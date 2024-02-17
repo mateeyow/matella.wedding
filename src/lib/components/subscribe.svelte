@@ -1,11 +1,31 @@
-<div class="h-svh" id="subscribe">
-	<h3>Subscribe</h3>
-	<p>
+<script lang="ts">
+	import Input from 'flowbite-svelte/Input.svelte';
+	import ButtonBlack from './button-black.svelte';
+</script>
+
+<div
+	class="min-h-svh bg-[url('$lib/assets/images/subscribe-bg.png')] bg-cover bg-center flex flex-col items-center justify-center text-white py-10 px-[30px]"
+	id="subscribe"
+>
+	<h3 class=" font-serif text-[60px]">Subscribe</h3>
+	<p class=" text-[16px] text-center my-[65px]">
 		Stay tuned for more updates about our wedding! You can message either of us but let's make use
 		of this site we created.
-	</p>
-	<p>
+		<br />
 		We will be updating this site with all the exciting details leading up to our big day. Thank you
 		for joining us on this incredible ride.
 	</p>
+	<Input
+		size="lg"
+		placeholder="johndoe@mail.com"
+		type="email"
+		class="rounded-none md:w-2/4 w-3/4"
+	/>
+	<ButtonBlack class="font-sans not-italic bg-transparent mt-[30px]">Submit</ButtonBlack>
+	<p class="my-[65px]">Love lots,</p>
+	<div class="flex flex-col gap-[30px] items-center">
+		<h3 class="text-[40px] tracking-[20px] uppercase font-serif leading-none">Matthew</h3>
+		<h3 class="text-[30px] font-serif italic">and</h3>
+		<h3 class="text-[40px] tracking-[20px] uppercase font-serif leading-none">Ella</h3>
+	</div>
 </div>

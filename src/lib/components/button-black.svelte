@@ -8,6 +8,6 @@
 	);
 </script>
 
-<button class={btnClass}>
+<button {...$$props} class={btnClass}>
 	<slot />
 </button>
