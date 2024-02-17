@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        bgLight: '#E9E7E1'
+        bgLight: '#E9E7E1',
+        black: '#1B1B1B'
       },
       screens: {
         'sm': '640px',
