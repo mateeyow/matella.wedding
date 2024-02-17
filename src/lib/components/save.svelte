@@ -3,8 +3,8 @@
 	import ButtonWhite from './button-white.svelte';
 </script>
 
-<div id="save-the-date" class="grid lg:grid-cols-2 lg:h-svh">
-	<div class="h-svh py-[60px] px-[30px] md:px-[60px] md:py-[80px]">
+<div id="save-the-date" class="grid md:grid-cols-2 md:h-svh">
+	<div class="md:h-svh py-[100px] px-[30px] md:px-[60px] md:py-[60px]">
 		<h3 class="font-serif text-[50px] font-medium mb-[40px]">Save the date</h3>
 		<p class="text-[14px]">
 			Hi [name],
