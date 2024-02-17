@@ -68,7 +68,7 @@
 			</p>
 		</TimelineItem>
 		<TimelineItem
-			date="09/2022"
+			date="09/2023"
 			classTime="text-white font-serif text-[20px] font-semibold"
 			classLi="mb-[24px]"
 		/>

@@ -1,5 +1,6 @@
 <script lang="ts">
 	import ArrowRight from 'flowbite-svelte-icons/ArrowRightOutline.svelte';
+	import BaliMap from '$lib/assets/images/bali-map.png';
 </script>
 
 <div class="min-h-svh py-[40px] px-[30px] md:py-[160px]" id="where-you-can-stay">
@@ -22,25 +23,45 @@
 
 			<ul class="font-serif text-[16px]">
 				<li class="font-bold py-[20px] border-b border-[#D2D0D0]">
-					<a href="/test" class="flex justify-between items-center">
+					<a
+						href="https://www.pleniluniovilla.com/terrazza-plenilunio/"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="flex justify-between items-center"
+					>
 						Villa Plenilunio Terazza
 						<ArrowRight strokeWidth="1px" size="lg" />
 					</a>
 				</li>
 				<li class="font-bold py-[20px] border-b border-[#D2D0D0]">
-					<a href="/test" class="flex justify-between items-center">
+					<a
+						href="https://www.fourseasons.com/jimbaranbay/"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="flex justify-between items-center"
+					>
 						Four Seasons
 						<ArrowRight strokeWidth="1px" size="lg" />
 					</a>
 				</li>
 				<li class="font-bold py-[20px] border-b border-[#D2D0D0]">
-					<a href="/test" class="flex justify-between items-center">
+					<a
+						href="https://www.marriott.com/en-us/hotels/dpsuw-renaissance-bali-uluwatu-resort-and-spa/overview/"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="flex justify-between items-center"
+					>
 						Renaissance Uluwatu
 						<ArrowRight strokeWidth="1px" size="lg" />
 					</a>
 				</li>
 				<li class="font-bold py-[20px] border-b border-[#D2D0D0] last:border-b-0">
-					<a href="/test" class="flex justify-between items-center">
+					<a
+						href="https://www.booking.com/hotel/id/swiss-belresort-pecatu.en-gb.html"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="flex justify-between items-center"
+					>
 						Swissbel Hotel
 						<ArrowRight strokeWidth="1px" size="lg" />
 					</a>
@@ -55,9 +76,9 @@
 			</p>
 		</div>
 
-		<div
-			class="bg-[#E3E1DA] bg-[url('$lib/assets/images/bali-map.png')] bg-cover min-h-[600px]"
-		></div>
+		<div class="bg-[#E3E1DA]">
+			<img src={BaliMap} alt="Bali Map" />
+		</div>
 	</div>
 
 	<p class="text-center text-[14px] mt-[50px]">
