@@ -9,6 +9,7 @@
 	import Gallery from '$lib/components/gallery.svelte';
 	import Registry from '$lib/components/registry.svelte';
 	import Subscribe from '$lib/components/subscribe.svelte';
+	import ImageBreak from '$lib/components/image-break.svelte';
 </script>
 
 <main>
@@ -18,6 +19,7 @@
 	<OurStory />
 	<Venue />
 	<Stay />
+	<ImageBreak />
 	<Events />
 	<Gallery />
 	<Registry />

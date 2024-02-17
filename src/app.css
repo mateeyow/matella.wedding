@@ -10,4 +10,70 @@
   html {
     scroll-behavior: smooth;
   }
+
+  @font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('/fonts/Brandon-Grotesque-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('/fonts/Brandon-Grotesque-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Garamond Premiere Pro';
+    src: url('/fonts/GaramondPremrPro.woff2') format('woff2'),
+      url('/fonts/GaramondPremrPro.woff') format('woff'),
+      url('/fonts/GaramondPremrPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Garamond Premiere Pro';
+    src: url('/fonts/GaramondPremrPro-Bd.woff2') format('woff2'),
+      url('/fonts/GaramondPremrPro-Bd.woff') format('woff'),
+      url('/fonts/GaramondPremrPro-Bd.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Garamond Premiere Pro';
+    src: url('/fonts/GaramondPremrPro-MedIt.woff2') format('woff2'),
+      url('/fonts/GaramondPremrPro-MedIt.woff') format('woff'),
+      url('/fonts/GaramondPremrPro-MedIt.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Garamond Premiere Pro';
+    src: url('/fonts/GaramondPremrPro-SmbdItCapt.woff2') format('woff2'),
+      url('/fonts/GaramondPremrPro-SmbdItCapt.woff') format('woff'),
+      url('/fonts/GaramondPremrPro-SmbdItCapt.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Garamond Premiere Pro';
+    src: url('/fonts/GaramondPremrPro-SmbdSubh.woff2') format('woff2'),
+      url('/fonts/GaramondPremrPro-SmbdSubh.woff') format('woff'),
+      url('/fonts/GaramondPremrPro-SmbdSubh.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
 }

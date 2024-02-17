@@ -7,9 +7,17 @@ export default {
         bgLight: '#E9E7E1'
       },
       screens: {
-        'tablet': '768px',
+        'sm': '640px',
+        'md': '769px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px',
       }
     },
+    fontFamily: {
+      sans: ['Brandon Grotesque', 'ui-sans-serif', 'system-ui', 'sans-serif', "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"],
+      serif: ['Garamond Premiere Pro', 'ui-serif', 'Georgia', 'Cambria', "Times New Roman", 'Times', 'serif']
+    }
   },
   plugins: [require('flowbite/plugin')],
 }
