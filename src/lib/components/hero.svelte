@@ -5,9 +5,9 @@
 		<!-- Mobile -->
 		<div class="flex flex-col md:hidden gap-[20px]">
 			<div class="flex flex-col gap-[10px]">
-				<h1 class="text-[40px] font-serif uppercase tracking-[20px]">Matthew</h1>
+				<h1 class="text-[40px] font-serif uppercase tracking-[20px] me-[-20px]">Matthew</h1>
 				<h1 class="text-[30px] font-serif italic font-medium">and</h1>
-				<h1 class="text-[40px] font-serif uppercase tracking-[20px]">Ella</h1>
+				<h1 class="text-[40px] font-serif uppercase tracking-[20px] me-[-20px]">Ella</h1>
 			</div>
 			<div class="flex flex-col gap-[10px]">
 				<h2 class="uppercase text-[14px] tracking-[2.8px]">03 . 01 . 2025</h2>

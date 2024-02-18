@@ -3,7 +3,6 @@
 ## TODO:
 
 - [ ] - Timeline
-- [ ] - Carousel
 - [ ] - Navigation
 - [ ] - Hero [Ken Burns](https://codepen.io/hkfoster/pen/naWZzZ)
 - [ ] - Navigation Icon to the right

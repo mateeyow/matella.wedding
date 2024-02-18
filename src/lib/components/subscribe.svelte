@@ -24,8 +24,10 @@
 	<ButtonBlack class="font-sans not-italic bg-transparent mt-[30px]">Submit</ButtonBlack>
 	<p class="my-[65px]">Love lots,</p>
 	<div class="flex flex-col gap-[30px] items-center">
-		<h3 class="text-[40px] tracking-[20px] uppercase font-serif leading-none">Matthew</h3>
+		<h3 class="text-[40px] tracking-[20px] uppercase font-serif leading-none me-[-20px]">
+			Matthew
+		</h3>
 		<h3 class="text-[30px] font-serif italic">and</h3>
-		<h3 class="text-[40px] tracking-[20px] uppercase font-serif leading-none">Ella</h3>
+		<h3 class="text-[40px] tracking-[20px] uppercase font-serif leading-none me-[-20px]">Ella</h3>
 	</div>
 </div>
