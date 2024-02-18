@@ -4,7 +4,7 @@
 </script>
 
 <div
-	class="min-h-svh bg-[url('$lib/assets/images/subscribe-bg.png')] bg-cover bg-center flex flex-col items-center justify-center text-white py-10 px-[30px]"
+	class="min-h-svh bg-[url('$lib/assets/images/subscribe-bg.png')] bg-cover bg-center flex flex-col items-center justify-center text-white py-[80px] px-[30px]"
 	id="subscribe"
 >
 	<h3 class=" font-serif text-[60px]">Subscribe</h3>

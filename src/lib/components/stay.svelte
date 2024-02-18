@@ -71,8 +71,12 @@
 			<p>
 				These are full-service hotels and are close to our venue. Of the four hotels, we have made
 				an arrangement with Villa Plenilunio Terazza. They can offer our guests a 15% discount. Our
-				coordinators from <span class="font-serif italic font-bold">@voweverwedding</span> will be more
-				than happy to make the arrangements for your bookings.
+				coordinators from <a
+					href="https://www.instagram.com/voweverwedding"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="font-serif italic font-bold">@voweverwedding</a
+				> will be more than happy to make the arrangements for your bookings.
 			</p>
 		</div>
 

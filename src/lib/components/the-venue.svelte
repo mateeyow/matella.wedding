@@ -40,6 +40,7 @@
 			let:Indicators
 			class="rounded-none md:h-[600px]"
 			imgClass="md:object-contain md:h-full md:w-fit"
+			duration="3000"
 		>
 			<Indicators class="translate-y-[50px] md:-translate-y-[10px]" />
 		</Carousel>
