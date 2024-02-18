@@ -9,72 +9,74 @@
 	class="bg-[url('$lib/assets/images/our-story-bg.png')] bg-center bg-cover px-[50px] py-[60px]"
 	id="our-story"
 >
-	<h3 class="font-serif text-[50px] text-white mb-[20px]">Our Story</h3>
+	<div class="max-w-[1248px] mx-auto">
+		<h3 class="font-serif text-[50px] text-white mb-[20px]">Our Story</h3>
 
-	<Timeline class="border-dashed">
-		<TimelineItem
-			date="2016"
-			classTime="text-white font-serif text-[20px] font-semibold"
-			classLi="mb-[24px]"
-		>
-			<p class="mb-4 text-base font-normal text-white font-sans dark:text-gray-400">
-				Matt left MedSpecialized for Singapore, Ella joined Medspecialized
-				<br />Lived one block away from each other. Never crossed paths.
-			</p>
-		</TimelineItem>
-		<TimelineItem
-			date="2020"
-			classTime="text-white font-serif text-[20px] font-semibold"
-			classLi="mb-[24px]"
-		>
-			<p class="mb-4 text-base font-normal text-white font-sans dark:text-gray-400">
-				Matt got heartbroken, Ella got heartbroken
-			</p>
-		</TimelineItem>
-		<TimelineItem
-			date="11/2021"
-			classTime="text-white font-serif text-[20px] font-semibold"
-			classLi="mb-[24px]"
-		>
-			<p class="mb-4 text-base font-normal text-white font-sans dark:text-gray-400">
-				Matt went to Argao to visit friends, Ella left Argao from same friends Matt visited
-			</p>
-		</TimelineItem>
-		<TimelineItem
-			date="11/25/2021"
-			classTime="text-white font-serif text-[20px] font-semibold"
-			classLi="mb-[24px]"
-		>
-			<p class="mb-4 text-base font-normal text-white font-sans dark:text-gray-400">
-				Unplanned lunch
-			</p>
-		</TimelineItem>
-		<TimelineItem
-			date="12/2021"
-			classTime="text-white font-serif text-[20px] font-semibold"
-			classLi="mb-[24px]"
-		>
-			<p class="mb-4 text-base font-normal text-white font-sans dark:text-gray-400">
-				Online dated each other
-			</p>
-		</TimelineItem>
-		<TimelineItem
-			date="02/2022"
-			classTime="text-white font-serif text-[20px] font-semibold"
-			classLi="mb-[24px]"
-		>
-			<p class="mb-4 text-base font-normal text-white font-sans dark:text-gray-400">
-				In a relationship
-			</p>
-		</TimelineItem>
-		<TimelineItem
-			date="09/2023"
-			classTime="text-white font-serif text-[20px] font-semibold"
-			classLi="mb-[24px]"
-		/>
-	</Timeline>
-	<div class="flex flex-col gap-[6px] md:flex-row">
-		<img src={OurStory1} alt="Our Story 1" class="md:flex-1" />
-		<img src={OurStory2} alt="Our Story 2" class="md:flex-1" />
+		<Timeline class="border-dashed">
+			<TimelineItem
+				date="2016"
+				classTime="text-white font-serif text-[20px] font-semibold"
+				classLi="mb-[24px]"
+			>
+				<p class="mb-4 text-base font-normal text-white font-sans dark:text-gray-400">
+					Matt left MedSpecialized for Singapore, Ella joined Medspecialized
+					<br />Lived one block away from each other. Never crossed paths.
+				</p>
+			</TimelineItem>
+			<TimelineItem
+				date="2020"
+				classTime="text-white font-serif text-[20px] font-semibold"
+				classLi="mb-[24px]"
+			>
+				<p class="mb-4 text-base font-normal text-white font-sans dark:text-gray-400">
+					Matt got heartbroken, Ella got heartbroken
+				</p>
+			</TimelineItem>
+			<TimelineItem
+				date="11/2021"
+				classTime="text-white font-serif text-[20px] font-semibold"
+				classLi="mb-[24px]"
+			>
+				<p class="mb-4 text-base font-normal text-white font-sans dark:text-gray-400">
+					Matt went to Argao to visit friends, Ella left Argao from same friends Matt visited
+				</p>
+			</TimelineItem>
+			<TimelineItem
+				date="11/25/2021"
+				classTime="text-white font-serif text-[20px] font-semibold"
+				classLi="mb-[24px]"
+			>
+				<p class="mb-4 text-base font-normal text-white font-sans dark:text-gray-400">
+					Unplanned lunch
+				</p>
+			</TimelineItem>
+			<TimelineItem
+				date="12/2021"
+				classTime="text-white font-serif text-[20px] font-semibold"
+				classLi="mb-[24px]"
+			>
+				<p class="mb-4 text-base font-normal text-white font-sans dark:text-gray-400">
+					Online dated each other
+				</p>
+			</TimelineItem>
+			<TimelineItem
+				date="02/2022"
+				classTime="text-white font-serif text-[20px] font-semibold"
+				classLi="mb-[24px]"
+			>
+				<p class="mb-4 text-base font-normal text-white font-sans dark:text-gray-400">
+					In a relationship
+				</p>
+			</TimelineItem>
+			<TimelineItem
+				date="09/2023"
+				classTime="text-white font-serif text-[20px] font-semibold"
+				classLi="mb-[24px]"
+			/>
+		</Timeline>
+		<div class="flex flex-col gap-[6px] md:flex-row">
+			<img src={OurStory1} alt="Our Story 1" class="md:flex-1" />
+			<img src={OurStory2} alt="Our Story 2" class="md:flex-1" />
+		</div>
 	</div>
 </div>
