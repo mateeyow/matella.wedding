@@ -4,11 +4,19 @@
 	let btnClass = '';
 
 	$: btnClass = twMerge(
-		'py-[20px] px-[40px] hover:bg-black hover:text-white font-serif text-[14px] italic font-normal bg-bgLight transition-colors duration-300 ease-in-out text-black border-black border',
+		'underline-hover py-[20px] px-[40px] font-serif text-[14px] italic font-normal bg-bgLight transition-colors duration-300 ease-in-out text-black border-black border',
 		$$props.class
 	);
 </script>
 
 <button class={btnClass}>
-	<slot />
+	<div class="relative inline-block">
+		<slot />
+	</div>
 </button>
+
+<style>
+	.underline-hover {
+		--underline-hover-color: theme('colors.black');
+	}
+</style>

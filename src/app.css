@@ -5,6 +5,7 @@
 @layer base {
   :root {
     background-color: theme('colors.bgLight');
+    --underline-hover-color: theme('colors.white')
   }
 
   html {
@@ -86,4 +87,23 @@
     font-style: normal;
     font-display: swap;
   }
+
+  .underline-hover > div:after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		transform: scaleX(0);
+		height: 1px;
+		bottom: 0;
+		left: 0;
+		background-color: var(--underline-hover-color);
+		transform-origin: bottom right;
+		transition: transform 0.5s ease-out;
+		transition-delay: 0.2s;
+	}
+
+	.underline-hover:hover > div:after {
+		transform: scaleX(1);
+		transform-origin: bottom left;
+	}
 }
