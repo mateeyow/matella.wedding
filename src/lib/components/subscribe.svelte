@@ -2,11 +2,14 @@
 	import Input from 'flowbite-svelte/Input.svelte';
 	import ButtonBlack from './button-black.svelte';
 	import z from 'zod';
+	import { subscribed } from '$lib/stores/subscription';
 
 	const SubscribePayload = z.object({
-		email: z.string().email(),
+		email: z.string({ required_error: 'email is required' }).email('must be a valid email'),
 		code: z.string().optional()
 	});
+
+	let error = '';
 
 	const onSubmit = async () => {
 		const formEl = document.getElementById('subscribe') as HTMLFormElement;
@@ -17,18 +20,23 @@
 		const result = SubscribePayload.safeParse(payload);
 
 		if (result.success === false) {
-			console.log('result.error', result.error);
+			error = result.error.flatten().fieldErrors.email?.[0] ?? '';
 			return;
 		}
 
-		try {
-			await fetch('/api/subscribe', {
-				method: 'POST',
-				body: JSON.stringify(payload)
-			});
-		} catch (err) {
-			console.log('err', err);
+		const response = await fetch('/api/subscribe', {
+			method: 'POST',
+			body: JSON.stringify(payload)
+		});
+
+		if (response.ok) {
+			subscribed.set(true);
+			return;
 		}
+
+		const err = await response.json();
+		console.error('error', err);
+		error = err.message;
 	};
 </script>
 
@@ -45,16 +53,23 @@
 		We will be updating this site with all the exciting details leading up to our big day. Thank you
 		for joining us on this incredible ride.
 	</p>
-	<Input
-		size="lg"
-		name="email"
-		placeholder="johndoe@mail.com"
-		type="email"
-		class="rounded-none md:w-2/4 w-3/4"
-	/>
-	<ButtonBlack class="font-sans not-italic bg-transparent mt-[30px]" type="submit"
-		>Submit</ButtonBlack
-	>
+	{#if $subscribed}
+		<p>Thank you for Subscribing! We will email you for any updates!</p>
+	{:else}
+		<Input
+			size="lg"
+			name="email"
+			placeholder="johndoe@mail.com"
+			type="email"
+			class="rounded-none md:w-2/4 w-3/4"
+		/>
+		{#if error}
+			<p class="text-red-500">{error}</p>
+		{/if}
+		<ButtonBlack class="font-sans not-italic bg-transparent mt-[30px]" type="submit"
+			>Submit</ButtonBlack
+		>
+	{/if}
 	<p class="my-[65px]">Love lots,</p>
 	<div class="flex flex-col gap-[30px] items-center">
 		<h3 class="text-[40px] tracking-[20px] uppercase font-serif leading-none me-[-20px]">
