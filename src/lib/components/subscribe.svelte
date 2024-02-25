@@ -1,15 +1,34 @@
 <script lang="ts">
 	import Input from 'flowbite-svelte/Input.svelte';
 	import ButtonBlack from './button-black.svelte';
+	import z from 'zod';
 
-	const onSubmit = () => {
+	const SubscribePayload = z.object({
+		email: z.string().email(),
+		code: z.string().optional()
+	});
+
+	const onSubmit = async () => {
 		const formEl = document.getElementById('subscribe') as HTMLFormElement;
 		const data = new FormData(formEl);
 
-		fetch('/api/subscribe', {
-			method: 'POST',
-			body: JSON.stringify(data)
-		});
+		const payload = Object.fromEntries(data.entries());
+
+		const result = SubscribePayload.safeParse(payload);
+
+		if (result.success === false) {
+			console.log('result.error', result.error);
+			return;
+		}
+
+		try {
+			await fetch('/api/subscribe', {
+				method: 'POST',
+				body: JSON.stringify(payload)
+			});
+		} catch (err) {
+			console.log('err', err);
+		}
 	};
 </script>
 
