@@ -2,13 +2,13 @@ import { error, json } from '@sveltejs/kit';
 import type { RequestHandler } from './$types';
 import { ClientResponseError } from 'pocketbase';
 
-export const POST: RequestHandler = async ({ request, locals, cookies }) => {
-	const { email } = await request.json();
-	const code = cookies.get('code');
+export const POST: RequestHandler = async ({ request, locals }) => {
+	const payload = await request.json();
 
 	try {
-		await locals.pb.collection('subscribers').create({ email, code });
+		await locals.pb.collection('invites').update(payload.id, payload);
 	} catch (err) {
+		console.error('Error updating invites with payload: ', payload);
 		if (err instanceof ClientResponseError) {
 			return error(500, err.message);
 		}

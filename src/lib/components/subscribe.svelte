@@ -10,8 +10,10 @@
 	});
 
 	let error = '';
+	let disabled = false;
 
 	const onSubmit = async () => {
+		disabled = true;
 		const formEl = document.getElementById('subscribe') as HTMLFormElement;
 		const data = new FormData(formEl);
 
@@ -28,6 +30,7 @@
 			method: 'POST',
 			body: JSON.stringify(payload)
 		});
+		disabled = false;
 
 		if (response.ok) {
 			subscribed.set(true);
@@ -66,7 +69,7 @@
 		{#if error}
 			<p class="text-red-500">{error}</p>
 		{/if}
-		<ButtonBlack class="font-sans not-italic bg-transparent mt-[30px]" type="submit"
+		<ButtonBlack class="font-sans not-italic bg-transparent mt-[30px]" type="submit" {disabled}
 			>Submit</ButtonBlack
 		>
 	{/if}

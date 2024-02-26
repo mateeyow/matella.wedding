@@ -4,6 +4,8 @@
 	import NavContainer from 'flowbite-svelte/NavContainer.svelte';
 	import NavUl from 'flowbite-svelte/NavUl.svelte';
 	import NavLi from 'flowbite-svelte/NavLi.svelte';
+
+	export let isPublic: boolean = true;
 </script>
 
 <Navbar class="bg-transparent fixed z-20 top-0 start-0">
@@ -12,7 +14,9 @@
 			<NavHamburger classMenu="text-white" />
 		</div>
 		<NavUl class="mx-auto uppercase">
-			<NavLi class="text-white tracking-[2.50px]" href="#save-the-date">Save the date</NavLi>
+			{#if !isPublic}
+				<NavLi class="text-white tracking-[2.50px]" href="#save-the-date">Save the date</NavLi>
+			{/if}
 			<NavLi class="text-white tracking-[2.50px]" href="#our-story">Our story</NavLi>
 			<NavLi class="text-white tracking-[2.50px]" href="#the-venue">The venue</NavLi>
 			<NavLi class="text-white tracking-[2.50px]" href="#where-you-can-stay"

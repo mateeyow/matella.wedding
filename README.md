@@ -1,12 +1,8 @@
 # Matella Wedding Website
 
+Pardon the code, rushed and not meant for commercial use.
+
 ## TODO:
 
-- [ ] - Timeline
 - [ ] - Navigation
 - [ ] - Hero [Ken Burns](https://codepen.io/hkfoster/pen/naWZzZ)
-- [ ] - Navigation Icon to the right
-
-Shoulder - 19
-Chest - 37
-Waist - 35
