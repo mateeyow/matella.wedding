@@ -1,0 +1,8 @@
+import { c as create_ssr_component, a as add_attribute } from "../../chunks/ssr.js";
+const bgImage = "/_app/immutable/assets/hero-bg.RtrDKLHT.png";
+const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${$$result.head += `<!-- HEAD_svelte-5r5xw4_START -->${$$result.title = `<title>Matt &amp; Ella&#39;s Wedding</title>`, ""}<meta name="description" content="Matt and Ella's wedding website"><meta property="og:title" content="Matt & Ella's Wedding"><meta property="og:description" content="Matt and Ella's wedding website"><meta property="og:image"${add_attribute("content", bgImage, 0)}><meta property="og:url" content="https://mattella-wedding.vercel.app"><meta property="og:type" content="website"><meta property="og:site_name" content="Matt & Ella's Wedding"><meta property="og:locale" content="en_US"><meta property="og:url" content="https://matella-wedding.vercel.app/"><meta property="og:type" content="website"><meta property="og:title" content="Matt & Ella's Wedding"><meta property="og:description" content="Matt and Ella's wedding website"><meta property="og:image"${add_attribute("content", bgImage, 0)}><meta name="twitter:card" content="summary_large_image"><meta property="twitter:domain" content="matella-wedding.vercel.app"><meta property="twitter:url" content="https://matella-wedding.vercel.app/"><meta name="twitter:title" content="Matt & Ella's Wedding"><meta name="twitter:description" content="Matt and Ella's wedding website"><meta name="twitter:image"${add_attribute("content", bgImage, 0)}><!-- HEAD_svelte-5r5xw4_END -->`, ""} ${slots.default ? slots.default({}) : ``}`;
+});
+export {
+  Layout as default
+};
