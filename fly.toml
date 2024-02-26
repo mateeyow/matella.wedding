@@ -1,0 +1,33 @@
+# fly.toml app configuration file generated for matella-wedding-summer-breeze-5556 on 2024-02-27T02:11:13+08:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'matella-wedding-summer-breeze-5556'
+primary_region = 'sin'
+
+[build]
+  dockerfile = 'api/Dockerfile.prod'
+
+[[mounts]]
+  source = 'pb_data'
+  destination = '/pb/pb_data'
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = false
+  auto_start_machines = true
+  min_machines_running = 1
+  processes = ['app']
+
+  [http_service.concurrency]
+    type = 'requests'
+    hard_limit = 550
+    soft_limit = 500
+
+[[vm]]
+  size = 'shared-cpu-1x'
+  memory = '512mb'
+  cpu_kind = 'shared'
+  cpus = 1

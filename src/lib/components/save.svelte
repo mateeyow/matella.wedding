@@ -80,8 +80,8 @@
 			we hope to share this moment with you like how you have shared your special moments with us.
 			<br />
 			<br />
-			We are looking forward to celebrating with you. The courtesy of a reply is requested by May 15,
-			2024.
+			We are looking forward to celebrating with you. The courtesy of a reply is requested by
+			<strong>May 15, 2024</strong>.
 		</p>
 
 		{#if !$invites}
