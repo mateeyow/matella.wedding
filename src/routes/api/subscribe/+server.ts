@@ -1,6 +1,11 @@
 import { error, json } from '@sveltejs/kit';
 import type { RequestHandler } from './$types';
 import { ClientResponseError } from 'pocketbase';
+import type { Config } from '@sveltejs/adapter-vercel';
+
+export const config: Config = {
+	runtime: 'edge'
+};
 
 export const POST: RequestHandler = async ({ request, locals, cookies }) => {
 	console.log('here');
