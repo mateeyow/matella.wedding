@@ -339,7 +339,7 @@
 					<ButtonBlack
 						class="w-full"
 						on:click={() => {
-							onGift;
+							onGift();
 							page += 1;
 						}}>Continue</ButtonBlack
 					>
