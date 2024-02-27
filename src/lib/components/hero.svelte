@@ -1,6 +1,11 @@
-<div
-	class="bg-[url('$lib/assets/images/hero-bg.png')] h-svh text-white bg-center bg-cover flex flex-col"
->
+<div id="hero" class="h-svh text-white bg-center bg-cover flex flex-col relative overflow-hidden">
+	<!-- <div
+	id="hero"
+	class="bg-[url('$lib/assets/images/hero-bg.png')] h-svh text-white bg-center bg-cover flex flex-col relative"
+> -->
+	<span
+		class="bg-[url('$lib/assets/images/hero-bg.png')] absolute top-0 left-0 w-full h-full bg-center bg-cover -z-10 bg-hero"
+	></span>
 	<div class="m-auto text-center">
 		<!-- Mobile -->
 		<div class="flex flex-col md:hidden gap-[20px]">
@@ -30,5 +35,39 @@
 		</div>
 	</div>
 	<p class="uppercase mb-[24px] mx-auto text-[10px] tracking-[5px]">Scroll down</p>
-	<div class="h-[50px] mx-auto bg-white w-[1px]" />
+	<div class="h-[50px] mx-auto bg-white w-[1px] scroll-bar relative overflow-hidden" />
 </div>
+
+<style>
+	span.bg-hero {
+		transform: translate3d(0, 0, 0) scale(1.25);
+		animation: scale 6.5s linear forwards;
+		/* transform: scale(1);
+		transition: 6.5s transform; */
+	}
+
+	.scroll-bar::after {
+		height: 55%;
+		content: ' ';
+		position: absolute;
+		top: 0;
+		width: 100%;
+		animation: scrollbar 2.5s linear infinite;
+		background-color: black;
+	}
+
+	@keyframes scale {
+		100% {
+			transform: scale(1);
+		}
+	}
+
+	@keyframes scrollbar {
+		0% {
+			transform: translateY(-50px);
+		}
+		100% {
+			transform: translateY(50px);
+		}
+	}
+</style>

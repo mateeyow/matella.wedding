@@ -43,7 +43,7 @@
 				imgClass="md:object-contain md:h-full md:w-fit"
 				duration={3000}
 			>
-				<Indicators class="translate-y-[50px] md:-translate-y-[10px]" />
+				<Indicators class="translate-y-[50px] md:translate-y-0" />
 			</Carousel>
 		</div>
 

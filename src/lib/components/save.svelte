@@ -104,7 +104,7 @@
 	</div>
 
 	<div
-		class="bg-[url('$lib/assets/images/save-the-date.png')] h-svh bg-bottom bg-no-repeat bg-cover"
+		class="bg-[url('$lib/assets/images/save-the-date.png')] h-svh sm:bg-bottom bg-[-50px] bg-no-repeat bg-cover"
 	></div>
 </div>
 

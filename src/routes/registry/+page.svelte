@@ -1,10 +1,11 @@
 <script lang="ts">
-	import { afterNavigate } from '$app/navigation';
-	import { base } from '$app/paths';
 	import ButtonBlack from '$lib/components/button-black.svelte';
 	import QRCode from '$lib/assets/images/qr-code.png';
+	import { onMount } from 'svelte';
+	import { browser } from '$app/environment';
+	import { LS_CODE } from '$lib/constants';
 
-	let previousPage: string = base;
+	let previousPage: string = '/#gift-registry';
 	let page = 0;
 
 	const onGift = () => {
@@ -16,8 +17,15 @@
 		});
 	};
 
-	afterNavigate(({ from }) => {
-		previousPage = from?.url.pathname || previousPage;
+	onMount(() => {
+		if (!browser) {
+			return;
+		}
+		const code = localStorage.getItem(LS_CODE);
+
+		if (code) {
+			previousPage = `/${code}#gift-registry`;
+		}
 	});
 </script>
 
