@@ -4,7 +4,7 @@
 
 EXECUTABLES = pnpm docker
 PB_VERSION=0.21.3
-SERVER_DIR=./api
+SERVER_DIR=./pocketbase
 PB_CONTAINER_NAME=matellapb
 PB_FLAGS=--hooksDir=/pb/hooks --migrationsDir=/pb/migrations --dir=/pb/data --publicDir=/pb/public
 COLOR_GREEN=$(shell echo "\033[0;32m")
