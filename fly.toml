@@ -7,7 +7,7 @@ app = 'matella-wedding-summer-breeze-5556'
 primary_region = 'sin'
 
 [build]
-  dockerfile = 'api/Dockerfile.prod'
+  dockerfile = 'pocketbase/Dockerfile.prod'
 
 [[mounts]]
   source = 'pb_data'
