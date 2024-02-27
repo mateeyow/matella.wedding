@@ -28,7 +28,10 @@
 
 		const response = await fetch('/api/subscribe', {
 			method: 'POST',
-			body: JSON.stringify(payload)
+			body: JSON.stringify(payload),
+			headers: {
+				'content-type': 'application/json'
+			}
 		});
 		disabled = false;
 
