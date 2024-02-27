@@ -39,7 +39,7 @@
 
 		const err = await response.json();
 		console.error('error', err);
-		error = err.message;
+		error = err?.message as string;
 	};
 </script>
 

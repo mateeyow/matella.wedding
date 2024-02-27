@@ -4,7 +4,7 @@ import { ClientResponseError } from 'pocketbase';
 import type { Config } from '@sveltejs/adapter-vercel';
 
 export const config: Config = {
-	runtime: 'edge'
+	runtime: 'nodejs18.x'
 };
 
 export const POST: RequestHandler = async ({ request, locals }) => {
