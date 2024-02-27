@@ -25,13 +25,21 @@
 	import GU10 from '$lib/assets/images/gu10.png';
 	import GU11 from '$lib/assets/images/gu11.png';
 	import GU12 from '$lib/assets/images/gu12.png';
-	import { afterNavigate } from '$app/navigation';
-	import { base } from '$app/paths';
+	import { onMount } from 'svelte';
+	import { browser } from '$app/environment';
+	import { LS_CODE } from '$lib/constants';
 
-	let previousPage: string = base;
+	let previousPage: string = '/#gallery';
 
-	afterNavigate(({ from }) => {
-		previousPage = from?.url.pathname || previousPage;
+	onMount(() => {
+		if (!browser) {
+			return;
+		}
+		const code = localStorage.getItem(LS_CODE);
+
+		if (code) {
+			previousPage = `/${code}#gallery`;
+		}
 	});
 
 	let selectedImage = {
@@ -120,7 +128,7 @@
 	<div class="flex flex-col gap-[30px] items-center">
 		<h1 class="font-serif text-[60px] font-medium leading-3">Gallery</h1>
 		<h2 class="text-[16px]">Vietnam, December 2023</h2>
-		<a href={`${previousPage}#gallery`} class="text-[#ACA9A1]">Back to homepage</a>
+		<a href={previousPage} class="text-[#ACA9A1]">Back to homepage</a>
 	</div>
 
 	<div class="mt-12">
@@ -150,6 +158,8 @@
 			</Gallery>
 		</Gallery>
 	</div>
+
+	<p class="text-[#ACA9A1] text-center mt-10">We will be uploading more soon!</p>
 </div>
 
 <Modal
