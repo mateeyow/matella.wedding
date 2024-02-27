@@ -1,11 +1,6 @@
 import { error, json } from '@sveltejs/kit';
 import type { RequestHandler } from './$types';
 import { ClientResponseError } from 'pocketbase';
-import type { Config } from '@sveltejs/adapter-vercel';
-
-export const config: Config = {
-	runtime: 'nodejs18.x'
-};
 
 export const POST: RequestHandler = async ({ request, locals }) => {
 	const payload = await request.json();

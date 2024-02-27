@@ -16,7 +16,7 @@
 		<img src={Gallery4} alt="Matt and Ella riding a bicycle" class="hidden md:block" />
 	</div>
 
-	<ButtonBlack>
-		<a href="/gallery"> View all photos </a>
-	</ButtonBlack>
+	<a href="/gallery">
+		<ButtonBlack>View all photos</ButtonBlack>
+	</a>
 </div>

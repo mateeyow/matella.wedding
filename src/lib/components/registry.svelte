@@ -12,7 +12,7 @@
 		<br />
 		We would love to create lifelong memories filled with adventures.
 	</p>
-	<ButtonBlack>
-		<a href="/registry"> I would like to send something!</a>
-	</ButtonBlack>
+	<a href="/registry">
+		<ButtonBlack>I would like to send something!</ButtonBlack>
+	</a>
 </div>

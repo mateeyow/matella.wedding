@@ -58,15 +58,13 @@
 						/>Sunglasses and sunscreens are a must too! <br />Our motif is
 						<span class="font-serif italic font-bold">simple and sophisticated.</span> Wear your color.
 					</p>
-					<ButtonWhite class="font-sans not-italic">
-						<a
-							href="https://www.pinterest.ph/ellasarmago/wedding-guests/?invite_code=1c39e90353f64d49ba5ab9def23e7fe5&sender=448038000337627362"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							View Pinterest Board
-						</a>
-					</ButtonWhite>
+					<a
+						href="https://www.pinterest.ph/ellasarmago/wedding-guests/?invite_code=1c39e90353f64d49ba5ab9def23e7fe5&sender=448038000337627362"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<ButtonWhite class="font-sans not-italic">View Pinterest Board</ButtonWhite>
+					</a>
 				</div>
 			</TimelineItem>
 		</Timeline>
