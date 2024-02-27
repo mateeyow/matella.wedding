@@ -39,8 +39,8 @@
 			<Carousel
 				{images}
 				let:Indicators
-				class="rounded-none md:h-[600px] lg:h-[700px] xl:h-[800px] 2xl:h-[800px]"
-				imgClass="md:object-contain md:h-full md:w-fit"
+				class="rounded-none md:h-[600px] lg:h-[700px] xl:h-[600px]"
+				imgClass="md:object-cover md:h-full md:w-fit"
 				duration={3000}
 			>
 				<Indicators class="translate-y-[50px] md:translate-y-0" />

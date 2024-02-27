@@ -1,8 +1,4 @@
 <div id="hero" class="h-svh text-white bg-center bg-cover flex flex-col relative overflow-hidden">
-	<!-- <div
-	id="hero"
-	class="bg-[url('$lib/assets/images/hero-bg.png')] h-svh text-white bg-center bg-cover flex flex-col relative"
-> -->
 	<span
 		class="bg-[url('$lib/assets/images/hero-bg.png')] absolute top-0 left-0 w-full h-full bg-center bg-cover -z-10 bg-hero"
 	></span>
