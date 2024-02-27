@@ -27,7 +27,7 @@
 		}
 
 		const response = await fetch('/api/subscribe', {
-			method: 'POST',
+			method: 'PUT',
 			body: JSON.stringify(payload),
 			headers: {
 				'content-type': 'application/json'

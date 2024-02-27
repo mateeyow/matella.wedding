@@ -7,7 +7,7 @@ export const config: Config = {
 	runtime: 'edge'
 };
 
-export const POST: RequestHandler = async ({ request, locals, cookies }) => {
+export const PUT: RequestHandler = async ({ request, locals, cookies }) => {
 	console.log('here');
 	const { email } = await request.json();
 	console.log('email', email);
