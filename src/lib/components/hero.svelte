@@ -11,7 +11,7 @@
 				<h1 class="text-[40px] font-serif uppercase tracking-[20px] me-[-20px]">Ella</h1>
 			</div>
 			<div class="flex flex-col gap-[10px]">
-				<h2 class="uppercase text-[14px] tracking-[2.8px]">03 . 01 . 2025</h2>
+				<h2 class="uppercase text-[14px] tracking-[2.8px]">March . 01 . 2025</h2>
 				<h2 class="uppercase text-[14px] tracking-[2.8px]">Villa Plenilunio, Uluwatu Bali</h2>
 			</div>
 		</div>
@@ -25,7 +25,7 @@
 			</div>
 			<div>
 				<h2 class="uppercase text-[20px] tracking-[4px]">
-					03 . 01 . 2025 | Villa Plenilunio, Uluwatu Bali
+					March . 01 . 2025 | Villa Plenilunio, Uluwatu Bali
 				</h2>
 			</div>
 		</div>

@@ -58,10 +58,11 @@
 	$: dinnerText = withPlusOne
 		? `Yes, we can make it on Feb 28 for the Welcome Dinner`
 		: 'Yes, I can make it on Feb 28 for the Welcome Dinner';
+	$: answerText = data.going ? 'See you there!' : 'We will miss you!';
 </script>
 
-<div id="save-the-date" class="grid md:grid-cols-2 md:h-svh">
-	<div class="md:h-svh py-[100px] px-[30px] md:px-[60px] md:py-[60px]">
+<div id="save-the-date" class="grid md:grid-cols-2 md:min-h-svh">
+	<div class="md:min-h-svh py-[100px] px-[30px] md:px-[60px] md:py-[60px]">
 		<h3 class="font-serif text-[50px] font-medium mb-[40px]">Save the date</h3>
 		<p class="text-[14px]">
 			Hi {data.name},
@@ -99,12 +100,12 @@
 				>
 			</div>
 		{:else}
-			<p class="text-[14px] mt-[40px]">Thanks for your response! We hope to see you there!</p>
+			<p class="text-[14px] mt-[40px]">Thanks for your response! {answerText}</p>
 		{/if}
 	</div>
 
 	<div
-		class="bg-[url('$lib/assets/images/save-the-date.png')] h-svh sm:bg-bottom bg-[-50px] bg-no-repeat bg-cover"
+		class="bg-[url('$lib/assets/images/save-the-date.png')] h-svh md:min-h-svh md:h-full sm:bg-bottom bg-[-50px] bg-no-repeat bg-cover"
 	></div>
 </div>
 

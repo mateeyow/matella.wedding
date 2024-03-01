@@ -33,7 +33,7 @@
 				</p>
 			</TimelineItem>
 			<TimelineItem
-				date="11/2021"
+				date="Nov. 2021"
 				classTime="text-white font-serif text-[20px] font-semibold"
 				classLi="mb-[24px]"
 			>
@@ -42,7 +42,7 @@
 				</p>
 			</TimelineItem>
 			<TimelineItem
-				date="11/25/2021"
+				date="Nov. 25, 2021"
 				classTime="text-white font-serif text-[20px] font-semibold"
 				classLi="mb-[24px]"
 			>
@@ -51,7 +51,7 @@
 				</p>
 			</TimelineItem>
 			<TimelineItem
-				date="12/2021"
+				date="Dec. 2021"
 				classTime="text-white font-serif text-[20px] font-semibold"
 				classLi="mb-[24px]"
 			>
@@ -60,7 +60,7 @@
 				</p>
 			</TimelineItem>
 			<TimelineItem
-				date="02/2022"
+				date="Feb. 2022"
 				classTime="text-white font-serif text-[20px] font-semibold"
 				classLi="mb-[24px]"
 			>
@@ -69,7 +69,7 @@
 				</p>
 			</TimelineItem>
 			<TimelineItem
-				date="09/2023"
+				date="Sept. 2023"
 				classTime="text-white font-serif text-[20px] font-semibold"
 				classLi="mb-[24px]"
 			/>
