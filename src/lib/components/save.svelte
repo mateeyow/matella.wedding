@@ -131,7 +131,6 @@
 			<ButtonWhite type="button" on:click={notGoingDinner}
 				>No, we'll see you on your wedding day.</ButtonWhite
 			>
-			<button class="text-[#ACA9A1] mt-[20px]" on:click={() => (open = false)}>Close</button>
 		</div>
 	</div>
 </Modal>

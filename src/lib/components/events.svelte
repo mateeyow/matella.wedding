@@ -34,6 +34,13 @@
 						<span class="font-serif italic font-bold">white button down shirts and pants.</span> Any
 						comfortable footwear.
 					</p>
+					<a
+						href="https://www.pinterest.com/ellasarmago/welcome-dinner"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<ButtonWhite class="font-sans not-italic">View Pinterest Board</ButtonWhite>
+					</a>
 				</div>
 			</TimelineItem>
 			<TimelineItem
@@ -59,7 +66,7 @@
 						<span class="font-serif italic font-bold">simple and sophisticated.</span> Wear your color.
 					</p>
 					<a
-						href="https://www.pinterest.ph/ellasarmago/wedding-guests/?invite_code=1c39e90353f64d49ba5ab9def23e7fe5&sender=448038000337627362"
+						href="https://www.pinterest.ph/ellasarmago/wedding-guests"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
