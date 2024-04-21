@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { InviteData } from '$lib/types';
 	import Modal from 'flowbite-svelte/Modal.svelte';
+	import { invalidateAll } from '$app/navigation';
 	import ButtonBlack from './button-black.svelte';
 	import ButtonWhite from './button-white.svelte';
 	import { invites } from '$lib/stores/invites';
@@ -9,12 +10,13 @@
 	let open = false;
 	let withPlusOne = false;
 
-	const sendData = (payload: Partial<InviteData>) => {
+	const sendData = async (payload: Partial<InviteData>) => {
 		invites.set(true);
-		fetch('/api/invites', {
+		await fetch('/api/invites', {
 			method: 'POST',
 			body: JSON.stringify({ ...payload, responded: true, id: data.id })
 		});
+		await invalidateAll();
 	};
 
 	const notGoing = () => {
