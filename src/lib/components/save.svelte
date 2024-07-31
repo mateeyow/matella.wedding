@@ -5,11 +5,15 @@
 	import ButtonBlack from './button-black.svelte';
 	import ButtonWhite from './button-white.svelte';
 	import { invites } from '$lib/stores/invites';
+	import dayjs from 'dayjs';
 
 	export let data: InviteData;
 	let open = false;
 	let withPlusOne = false;
 
+	const formattedDate = dayjs(data.deadline || new Date('2024-08-31 12:00:00.000Z')).format(
+		'MMMM DD, YYYY'
+	);
 	const sendData = async (payload: Partial<InviteData>) => {
 		invites.set(true);
 		await fetch('/api/invites', {
@@ -84,7 +88,7 @@
 			<br />
 			<br />
 			We are looking forward to celebrating with you. The courtesy of a reply is requested by
-			<strong>May 15, 2024</strong>.
+			<strong>{formattedDate}</strong>.
 		</p>
 
 		{#if !$invites}

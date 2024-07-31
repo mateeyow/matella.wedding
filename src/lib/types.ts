@@ -8,4 +8,5 @@ export type InviteData = {
 	responded: boolean;
 	hasPlusOne: boolean;
 	bringPlusOne: boolean;
+	deadline: string;
 };
