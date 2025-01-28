@@ -2,6 +2,8 @@
 	import Timeline from 'flowbite-svelte/Timeline.svelte';
 	import TimelineItem from 'flowbite-svelte/TimelineItem.svelte';
 	import ButtonWhite from './button-white.svelte';
+
+	let images = Array.from([1, 2, 3, 4, 5]).map((i) => `/images/welcome${i}.webp`);
 </script>
 
 <div
@@ -19,24 +21,35 @@
 				classTime="text-white font-serif text-[20px] font-semibold"
 				classLi="mb-[24px]"
 			>
-				<div class="bg-bgLight py-[30px] px-[20px] flex flex-col gap-[15px]">
-					<h3 class="font-serif text-[24px] font-medium">Welcome Dinner</h3>
-					<h4 class="uppercase text-[14px]">Motif and Dress Code:</h4>
-					<p class="text-[14px]">
-						For the welcome dinner, may we request our guests to wear a comfortable <span
-							class="font-serif italic font-bold">white cocktail or beach dress or pantsuits</span
-						>
-						for women, and for men
-						<span class="font-serif italic font-bold">white button down shirts and pants.</span> Any
-						comfortable footwear.
+				<div class="bg-bgLight py-[30px] px-[20px] flex flex-col gap-[30px]">
+					<h3 class="font-serif text-[30px] font-medium">Welcome Dinner</h3>
+					<div class="flex flex-col">
+						<div class="grid grid-cols-4">
+							<p class="font-semibold uppercase">Venue:</p>
+							<p class="col-span-3">Ulu Cliffhouse</p>
+						</div>
+						<div class="grid grid-cols-4">
+							<p class="font-semibold uppercase">Time:</p>
+							<p class="col-span-3">4:00PM - 8:00PM</p>
+						</div>
+					</div>
+					<p>
+						This will be a low-alcohol evening filled with fun and friendly competition as we host
+						an engaging trivia night! (Max of 15 persons/team)
 					</p>
-					<a
-						href="https://www.pinterest.com/ellasarmago/welcome-dinner"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<ButtonWhite class="font-sans not-italic">View Pinterest Board</ButtonWhite>
-					</a>
+					<div class="flex flex-col gap-[22px]">
+						<h4 class="uppercase font-semibold">Motif and Dress Code:</h4>
+						<p class="">
+							May we request our guests to wear a comfortable white cocktail or beach dress or
+							pantsuits for women, and for men white button down shirts and pants. Any comfortable
+							footwear.
+						</p>
+					</div>
+					<div class="grid grid-cols-6 gap-[10px]">
+						{#each images as image (image)}
+							<img src={image} alt="Welcome Dinner" class="h-[150px] w-full col-span-2 event-img" />
+						{/each}
+					</div>
 				</div>
 			</TimelineItem>
 			<TimelineItem
@@ -73,3 +86,10 @@
 		</Timeline>
 	</div>
 </div>
+
+<style>
+	.event-img:last-child,
+	.event-img:nth-child(4) {
+		grid-column: span 3 / span 3;
+	}
+</style>
