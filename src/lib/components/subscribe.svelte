@@ -51,31 +51,6 @@
 	class="min-h-svh bg-[url('$lib/assets/images/subscribe-bg.png')] bg-cover bg-center flex flex-col items-center justify-center text-white py-[80px] px-[30px]"
 	id="subscribe"
 >
-	<h3 class=" font-serif text-[60px]">Subscribe</h3>
-	<p class=" text-[16px] text-center my-[65px]">
-		Stay tuned for more updates about our wedding! You can message either of us but let's make use
-		of this site we created.
-		<br />
-		We will be updating this site with all the exciting details leading up to our big day. Thank you
-		for joining us on this incredible ride.
-	</p>
-	{#if $subscribed}
-		<p>Thank you for Subscribing! We will email you for any updates!</p>
-	{:else}
-		<Input
-			size="lg"
-			name="email"
-			placeholder="johndoe@mail.com"
-			type="email"
-			class="rounded-none md:w-2/4 w-3/4"
-		/>
-		{#if error}
-			<p class="text-red-500">{error}</p>
-		{/if}
-		<ButtonBlack class="font-sans not-italic bg-transparent mt-[30px]" type="submit" {disabled}
-			>Submit</ButtonBlack
-		>
-	{/if}
 	<p class="my-[65px]">Love lots,</p>
 	<div class="flex flex-col gap-[30px] items-center">
 		<h3 class="text-[40px] tracking-[20px] uppercase font-serif leading-none me-[-20px]">
