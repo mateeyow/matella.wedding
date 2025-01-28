@@ -29,10 +29,10 @@
 	<Hero />
 	<Save {data} />
 	<OurStory />
+	<Events />
 	<Venue />
 	<Stay />
 	<ImageBreak />
-	<Events />
 	<Gallery />
 	<Registry />
 	<Subscribe />

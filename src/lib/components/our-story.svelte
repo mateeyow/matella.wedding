@@ -5,72 +5,72 @@
 	import OurStory2 from '$lib/assets/images/our-story-2.png';
 </script>
 
-<div
-	class="bg-[url('$lib/assets/images/our-story-bg.png')] bg-center bg-cover px-[50px] py-[60px]"
-	id="our-story"
->
+<div class="bg-bgDark bg-center bg-cover px-[50px] py-[60px]" id="our-story">
 	<div class="max-w-[1248px] mx-auto">
-		<h3 class="font-serif text-[50px] text-white mb-[20px]">Our Story</h3>
+		<h3 class="font-serif text-[50px] mb-[20px]">Our Story</h3>
 
-		<Timeline class="border-dashed">
+		<Timeline class="text-black border-dashed border-black">
 			<TimelineItem
 				date="2016"
-				classTime="text-white font-serif text-[20px] font-semibold"
+				classTime="text-black font-serif text-[20px] font-semibold"
+				classDiv="bg-black border-black"
 				classLi="mb-[24px]"
 			>
-				<p class="mb-4 text-base font-normal text-white font-sans dark:text-gray-400">
+				<p class="mb-4 text-base font-normal font-sans dark:text-gray-400">
 					Matt left MedSpecialized for Singapore, Ella joined Medspecialized
 					<br />Lived one block away from each other. Never crossed paths.
 				</p>
 			</TimelineItem>
 			<TimelineItem
 				date="2020"
-				classTime="text-white font-serif text-[20px] font-semibold"
+				classTime="text-black font-serif text-[20px] font-semibold"
+				classDiv="bg-black border-black"
 				classLi="mb-[24px]"
 			>
-				<p class="mb-4 text-base font-normal text-white font-sans dark:text-gray-400">
+				<p class="mb-4 text-base font-normal font-sans dark:text-gray-400">
 					Matt got heartbroken, Ella got heartbroken
 				</p>
 			</TimelineItem>
 			<TimelineItem
 				date="Nov. 2021"
-				classTime="text-white font-serif text-[20px] font-semibold"
+				classTime="text-black  font-serif text-[20px] font-semibold"
+				classDiv="bg-black border-black"
 				classLi="mb-[24px]"
 			>
-				<p class="mb-4 text-base font-normal text-white font-sans dark:text-gray-400">
+				<p class="mb-4 text-base font-normal font-sans dark:text-gray-400">
 					Matt went to Argao to visit friends, Ella left Argao from same friends Matt visited
 				</p>
 			</TimelineItem>
 			<TimelineItem
 				date="Nov. 25, 2021"
-				classTime="text-white font-serif text-[20px] font-semibold"
+				classTime="text-black  font-serif text-[20px] font-semibold"
+				classDiv="bg-black border-black"
 				classLi="mb-[24px]"
 			>
-				<p class="mb-4 text-base font-normal text-white font-sans dark:text-gray-400">
-					Unplanned lunch
-				</p>
+				<p class="mb-4 text-base font-normal font-sans dark:text-gray-400">Unplanned lunch</p>
 			</TimelineItem>
 			<TimelineItem
 				date="Dec. 2021"
-				classTime="text-white font-serif text-[20px] font-semibold"
+				classTime="text-black  font-serif text-[20px] font-semibold"
+				classDiv="bg-black border-black"
 				classLi="mb-[24px]"
 			>
-				<p class="mb-4 text-base font-normal text-white font-sans dark:text-gray-400">
+				<p class="mb-4 text-base font-normal font-sans dark:text-gray-400">
 					Online dated each other
 				</p>
 			</TimelineItem>
 			<TimelineItem
 				date="Feb. 2022"
-				classTime="text-white font-serif text-[20px] font-semibold"
+				classTime="text-black  font-serif text-[20px] font-semibold"
+				classDiv="bg-black border-black"
 				classLi="mb-[24px]"
 			>
-				<p class="mb-4 text-base font-normal text-white font-sans dark:text-gray-400">
-					In a relationship
-				</p>
+				<p class="mb-4 text-base font-normal font-sans dark:text-gray-400">In a relationship</p>
 			</TimelineItem>
 			<TimelineItem
 				date="Sept. 2023"
-				classTime="text-white font-serif text-[20px] font-semibold"
+				classTime="text-black  font-serif text-[20px] font-semibold"
+				classDiv="bg-black border-black"
 				classLi="mb-[24px]"
 			/>
 		</Timeline>

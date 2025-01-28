@@ -69,44 +69,67 @@
 
 <div id="save-the-date" class="grid md:grid-cols-2 md:min-h-svh">
 	<div class="md:min-h-svh py-[100px] px-[30px] md:px-[60px] md:py-[60px]">
-		<h3 class="font-serif text-[50px] font-medium mb-[40px]">Save the date</h3>
-		<p class="text-[14px]">
-			Hi {data.name},
-			<br />
-			<br />
-			<br />
-			With the sound of the waves and the sunset at our backs, we are beyond thrilled to extend our heartfelt
-			invitation to you.
-			<br />
-			<br />
-			Our special day promises a day filled with laughter, sunkissed skin, bottoms up, after-wedding
-			hangover and most especially a memory that will linger in our hearts for a lifetime.
-			<br />
-			<br />
-			Please join us in this "intimate but rowdy" celebration of our love. You are special to us, and
-			we hope to share this moment with you like how you have shared your special moments with us.
-			<br />
-			<br />
-			We are looking forward to celebrating with you. The courtesy of a reply is requested by
-			<strong>{formattedDate}</strong>.
-		</p>
-
-		{#if !$invites}
-			<div class="flex flex-col gap-[10px] mt-[40px]">
-				<ButtonBlack on:click={goingAlone} type="button"
-					>Yes, I am packed and ready to celebrate in person!</ButtonBlack
-				>
-				{#if data.hasPlusOne}
-					<ButtonBlack on:click={goingWithPlusOne}
-						>Yes, and I will be bringing {plusOne} with me.</ButtonBlack
-					>
-				{/if}
-				<ButtonWhite on:click={notGoing}
-					>No, I will be there in spirit and will forever regret this decision.</ButtonWhite
-				>
-			</div>
+		{#if !data.isLateInvite}
+			<h3 class="font-serif text-[50px] font-medium mb-[60px] md:text-[60px]">Hi {data.name}.</h3>
+			<p class="text-[20px] font-thin">
+				We're Over the Moon!
+				<br />
+				<br />
+				Thank you for saying “yes” to celebrating our special day with us! We're so excited to share
+				this unforgettable moment with you, surrounded by the sound of the waves, a stunning sunset,
+				and the best company we could ever ask for—you.
+				<br />
+				<br />
+				See you in Bali.
+				<br />
+				<br />
+				<br />
+				<br />
+				Lovelots,
+				<br />
+				<br />
+				Matt & Ella
+			</p>
 		{:else}
-			<p class="text-[14px] mt-[40px]">Thanks for your response! {answerText}</p>
+			<h3 class="font-serif text-[50px] font-medium mb-[40px]">Save the date</h3>
+			<p class="text-[14px]">
+				Hi {data.name},
+				<br />
+				<br />
+				<br />
+				With the sound of the waves and the sunset at our backs, we are beyond thrilled to extend our
+				heartfelt invitation to you.
+				<br />
+				<br />
+				Our special day promises a day filled with laughter, sunkissed skin, bottoms up, after-wedding
+				hangover and most especially a memory that will linger in our hearts for a lifetime.
+				<br />
+				<br />
+				Please join us in this "intimate but rowdy" celebration of our love. You are special to us, and
+				we hope to share this moment with you like how you have shared your special moments with us.
+				<br />
+				<br />
+				We are looking forward to celebrating with you. The courtesy of a reply is requested by
+				<strong>{formattedDate}</strong>.
+			</p>
+
+			{#if !$invites}
+				<div class="flex flex-col gap-[10px] mt-[40px]">
+					<ButtonBlack on:click={goingAlone} type="button"
+						>Yes, I am packed and ready to celebrate in person!</ButtonBlack
+					>
+					{#if data.hasPlusOne}
+						<ButtonBlack on:click={goingWithPlusOne}
+							>Yes, and I will be bringing {plusOne} with me.</ButtonBlack
+						>
+					{/if}
+					<ButtonWhite on:click={notGoing}
+						>No, I will be there in spirit and will forever regret this decision.</ButtonWhite
+					>
+				</div>
+			{:else}
+				<p class="text-[14px] mt-[40px]">Thanks for your response! {answerText}</p>
+			{/if}
 		{/if}
 	</div>
 

@@ -11,10 +11,6 @@
 	<div class="max-w-[1248px] mx-auto">
 		<div>
 			<h3 class="font-serif text-[50px] text-white">Events</h3>
-			<p class="text-white text-[14px]">
-				Details of the events shall be announced around December. Please make sure to enable
-				notification to receive updates.<br />Thank you.
-			</p>
 		</div>
 
 		<Timeline class="border-dashed mt-[30px]">

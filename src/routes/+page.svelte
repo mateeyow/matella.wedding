@@ -15,10 +15,10 @@
 	<Navigation isPublic={true} />
 	<Hero />
 	<OurStory />
+	<Events />
 	<Venue />
 	<Stay />
 	<ImageBreak />
-	<Events />
 	<Gallery />
 	<Registry />
 	<Subscribe />

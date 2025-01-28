@@ -1,7 +1,15 @@
 <div id="hero" class="h-svh text-white bg-center bg-cover flex flex-col relative overflow-hidden">
-	<span
-		class="bg-[url('$lib/assets/images/hero-bg.png')] absolute top-0 left-0 w-full h-full bg-center bg-cover -z-10 bg-hero"
-	></span>
+	<video
+		class="absolute top-0 left-0 w-full h-full bg-center bg-cover -z-10 bg-hero object-cover"
+		autoplay
+		loop
+		muted
+		playsinline
+	>
+		<source src="/videos/output-desktop.webm" type="video/mp4" media="(min-width: 1024px)" />
+		<source src="/videos/output-mobile.webm" type="video/mp4" media="(max-width: 1023px)" />
+		Your browser does not support the video tag.
+	</video>
 	<div class="m-auto text-center">
 		<!-- Mobile -->
 		<div class="flex flex-col md:hidden gap-[20px]">
@@ -35,13 +43,6 @@
 </div>
 
 <style>
-	span.bg-hero {
-		transform: translate3d(0, 0, 0) scale(1.25);
-		animation: scale 6.5s linear forwards;
-		/* transform: scale(1);
-		transition: 6.5s transform; */
-	}
-
 	.scroll-bar::after {
 		height: 55%;
 		content: ' ';
