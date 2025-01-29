@@ -3,7 +3,8 @@
 	import TimelineItem from 'flowbite-svelte/TimelineItem.svelte';
 	import ButtonWhite from './button-white.svelte';
 
-	let images = Array.from([1, 2, 3, 4, 5]).map((i) => `/images/welcome${i}.webp`);
+	let welcomeImages = Array.from([1, 2, 3, 4, 5]).map((i) => `/images/welcome${i}.webp`);
+	let weddingImages = Array.from([1, 2, 3, 4, 5]).map((i) => `/images/wedding${i}.webp`);
 </script>
 
 <div
@@ -46,7 +47,7 @@
 						</p>
 					</div>
 					<div class="grid grid-cols-6 gap-[10px]">
-						{#each images as image (image)}
+						{#each welcomeImages as image (image)}
 							<img src={image} alt="Welcome Dinner" class="h-[150px] w-full col-span-2 event-img" />
 						{/each}
 					</div>
@@ -57,30 +58,38 @@
 				classTime="text-white font-serif text-[20px] font-semibold"
 				classLi="mb-[24px]"
 			>
-				<div class="bg-bgLight py-[30px] px-[20px] flex flex-col gap-[15px]">
-					<h3 class="font-serif text-[24px] font-medium">Wedding Day</h3>
-					<h4 class="uppercase text-[14px]">Motif and Dress Code:</h4>
-					<p class="text-[14px]">
-						Our wedding will be taking place outdoors. May we suggest <span
-							class="font-serif italic font-bold"
-							>chic sundresses or gowns that are ankle to floor length.</span
-						>
-						The ceremony will be held poolside,
-						<span class="font-serif italic font-bold">sandals, wedge or any comfortable heels</span>
-						can be worn.
+				<div class="bg-bgLight py-[30px] px-[20px] flex flex-col gap-[30px]">
+					<h3 class="font-serif text-[30px] font-medium">Wedding Day</h3>
+					<div class="flex flex-col">
+						<div class="grid grid-cols-4">
+							<p class="font-semibold uppercase">Venue:</p>
+							<p class="col-span-3">Villa Plenilunio</p>
+						</div>
+						<div class="grid grid-cols-4">
+							<p class="font-semibold uppercase">Time:</p>
+							<p class="col-span-3">3:00PM - 2:00AM</p>
+						</div>
+					</div>
+					<h4 class="uppercase font-semibold">Motif and Dress Code:</h4>
+					<p class="">
+						Our wedding will be taking place outdoors. May we suggest chic long dresses or gowns
+						that are ankle to floor length. The ceremony will be held poolside, sandals, wedge or
+						any comfortable heels can be worn.
 						<br />
-						For men, <span class="font-serif italic font-bold">formal and simple.</span> We ask the
-						men to wear a <span class="font-serif italic font-bold">dark suit and tie.</span><br
-						/>Sunglasses and sunscreens are a must too! <br />Our motif is
-						<span class="font-serif italic font-bold">simple and sophisticated.</span> Wear your color.
+						<br />
+						For men, formal and simple. We ask the men to be in a suit and tie during the ceremony.
+						<br />
+						<br />
+						Sunglasses and sunscreens are a must too!
+						<br />
+						<br />
+						Wear your color.
 					</p>
-					<a
-						href="https://www.pinterest.ph/ellasarmago/wedding-guests"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<ButtonWhite class="font-sans not-italic">View Pinterest Board</ButtonWhite>
-					</a>
+					<div class="grid grid-cols-6 gap-[10px]">
+						{#each weddingImages as image (image)}
+							<img src={image} alt="Wedding" class="h-[150px] w-full col-span-2 event-img" />
+						{/each}
+					</div>
 				</div>
 			</TimelineItem>
 		</Timeline>

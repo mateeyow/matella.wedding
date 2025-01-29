@@ -16,10 +16,10 @@
 	<Hero />
 	<OurStory />
 	<Events />
+	<Registry />
 	<Venue />
 	<Stay />
 	<ImageBreak />
 	<Gallery />
-	<Registry />
 	<Subscribe />
 </main>
