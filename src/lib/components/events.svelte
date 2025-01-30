@@ -36,7 +36,7 @@
 					</div>
 					<p>
 						This will be a low-alcohol evening filled with fun and friendly competition as we host
-						an engaging trivia night! (Max of 15 persons/team)
+						an engaging trivia night!
 					</p>
 					<div class="flex flex-col gap-[22px]">
 						<h4 class="uppercase font-semibold">Motif and Dress Code:</h4>
@@ -67,7 +67,7 @@
 						</div>
 						<div class="grid grid-cols-4">
 							<p class="font-semibold uppercase">Time:</p>
-							<p class="col-span-3">3:00PM - 2:00AM</p>
+							<p class="col-span-3">3:00PM</p>
 						</div>
 					</div>
 					<h4 class="uppercase font-semibold">Motif and Dress Code:</h4>

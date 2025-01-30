@@ -32,7 +32,6 @@
 	<Events />
 	<Registry />
 	<Venue />
-	<Stay />
 	<ImageBreak />
 	<Gallery />
 	<Subscribe />
