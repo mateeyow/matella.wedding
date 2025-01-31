@@ -4,7 +4,6 @@
 	import Hero from '$lib/components/hero.svelte';
 	import OurStory from '$lib/components/our-story.svelte';
 	import Venue from '$lib/components/the-venue.svelte';
-	import Stay from '$lib/components/stay.svelte';
 	import Events from '$lib/components/events.svelte';
 	import Gallery from '$lib/components/gallery.svelte';
 	import Registry from '$lib/components/registry.svelte';
@@ -14,6 +13,7 @@
 	import { onMount } from 'svelte';
 	import { browser } from '$app/environment';
 	import { LS_CODE } from '$lib/constants';
+	import Squad from '$lib/components/squad.svelte';
 
 	export let data;
 
@@ -31,8 +31,9 @@
 	<OurStory />
 	<Events />
 	<Registry />
-	<Venue />
 	<ImageBreak />
+	<Squad />
+	<Venue />
 	<Gallery />
 	<Subscribe />
 </main>

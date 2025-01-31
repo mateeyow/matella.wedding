@@ -5,17 +5,16 @@
 <div class="flex flex-col items-center py-[60px] px-[30px] gap-[50px]" id="gift-registry">
 	<h3 class="font-serif text-[50px]">Gifts</h3>
 	<p class="text-[14px] text-center leading-[170%]">
-		We're so thrilled you're making the trip to Bali to share in our joy.
-		<br />
-		Celebrating with you after we say "I do" is all we could ask for.
+		We're so thrilled you're making the trip to Bali to share in our joy. Celebrating with you after
+		we say "I do" is all we could ask for.
 		<br />
 		Should you insist on giving us gifts, please consider making a contribution to our honeymoon fund.
 		<br />
 		We would love to create lifelong memories filled with adventures.
 	</p>
 
-	<div class="flex flex-col gap-[40px] text-center">
-		<div class="flex flex-col items-center gap-[10px]">
+	<div class="flex flex-col md:flex-row gap-[40px] text-center md:max-w-[1200px]">
+		<div class="flex flex-col items-center gap-[10px] md:w-1/3">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="100"
@@ -131,7 +130,7 @@
 			</p>
 		</div>
 
-		<div class="flex flex-col items-center gap-[10px]">
+		<div class="flex flex-col items-center gap-[10px] md:w-1/3">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="100"
@@ -187,7 +186,7 @@
 			</p>
 		</div>
 
-		<div class="flex flex-col items-center gap-[10px]">
+		<div class="flex flex-col items-center gap-[10px] md:w-1/3">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="101"

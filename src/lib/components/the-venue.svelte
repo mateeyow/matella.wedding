@@ -31,7 +31,7 @@
 </script>
 
 <div
-	class="bg-bgDark py-[40px] px-[30px] min-h-svh md:h-svh md:py-[100px] md:px-[60px]"
+	class="bg-[#E9E7E1] py-[40px] px-[30px] min-h-svh md:h-svh md:py-[100px] md:px-[60px]"
 	id="the-venue"
 >
 	<div class="max-w-[1248px] mx-auto md:grid md:grid-cols-[1fr_300px] md:gap-[60px]">
