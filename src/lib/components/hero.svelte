@@ -1,13 +1,25 @@
+<script>
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		const video = document.querySelector('video');
+
+		if (!video) return;
+
+		video.play();
+	});
+</script>
+
 <div id="hero" class="h-svh text-white bg-center bg-cover flex flex-col relative overflow-hidden">
 	<video
-		class="absolute top-0 left-0 w-full h-full bg-center bg-cover -z-10 bg-hero object-cover"
+		class="absolute top-0 left-0 w-full h-full bg-center bg-black bg-cover -z-10 bg-hero object-cover"
+		playsinline
 		autoplay
 		loop
 		muted
-		playsinline
 	>
-		<source src="/videos/output-desktop.webm" type="video/mp4" media="(min-width: 1024px)" />
-		<source src="/videos/output-mobile.webm" type="video/mp4" media="(max-width: 1023px)" />
+		<source src="/videos/output-desktop.webm" type="video/webm" media="(min-width: 1024px)" />
+		<source src="/videos/output-mobile.webm" type="video/webm" media="(max-width: 1023px)" />
 		Your browser does not support the video tag.
 	</video>
 	<div class="m-auto text-center">
