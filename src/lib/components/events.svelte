@@ -54,7 +54,7 @@
 							<img
 								src={image}
 								alt="Welcome Dinner"
-								class="h-[150px] md:h-full w-full col-span-2 event-img"
+								class="h-[150px] md:h-auto w-full col-span-2 event-img object-cover object-center"
 							/>
 						{/each}
 					</div>
@@ -105,7 +105,7 @@
 							<img
 								src={image}
 								alt="Wedding"
-								class="h-[150px] md:h-full w-full col-span-2 event-img"
+								class="h-[150px] md:h-auto w-full col-span-2 event-img object-cover object-center"
 							/>
 						{/each}
 					</div>
