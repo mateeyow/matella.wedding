@@ -50,17 +50,53 @@
 				<img src="/images/bride-squad/5.webp" alt="Bride Squad 5" class="w-[calc(12%-10px)]" />
 			</div>
 			<div class="flex flex-wrap gap-[10px] justify-center">
-				<img src="/images/bride-squad/6.webp" alt="Bride Squad 6" class="w-[calc(23%-10px)]" />
-				<img src="/images/bride-squad/7.webp" alt="Bride Squad 7" class="w-[calc(18%-10px)]" />
-				<img src="/images/bride-squad/8.webp" alt="Bride Squad 8" class="w-[calc(23%-10px)]" />
-				<img src="/images/bride-squad/9.webp" alt="Bride Squad 9" class="w-[calc(18%-10px)]" />
+				<img
+					src="/images/bride-squad/6.webp"
+					alt="Bride Squad 6"
+					class="w-[calc(23%-10px)] max-h-[200px]"
+				/>
+				<img
+					src="/images/bride-squad/7.webp"
+					alt="Bride Squad 7"
+					class="w-[calc(18%-10px)] max-h-[200px]"
+				/>
+				<img
+					src="/images/bride-squad/8.webp"
+					alt="Bride Squad 8"
+					class="w-[calc(23%-10px)] max-h-[200px]"
+				/>
+				<img
+					src="/images/bride-squad/9.webp"
+					alt="Bride Squad 9"
+					class="w-[calc(18%-10px)] max-h-[200px]"
+				/>
 			</div>
 			<div class="flex flex-wrap gap-[10px] justify-center">
-				<img src="/images/bride-squad/10.webp" alt="Bride Squad 10" class="w-[calc(25%-10px)]" />
-				<img src="/images/bride-squad/11.webp" alt="Bride Squad 11" class="w-[calc(12%-10px)]" />
-				<img src="/images/bride-squad/12.webp" alt="Bride Squad 12" class="w-[calc(23%-10px)]" />
-				<img src="/images/bride-squad/13.webp" alt="Bride Squad 13" class="w-[calc(15%-10px)]" />
-				<img src="/images/bride-squad/14.webp" alt="Bride Squad 14" class="w-[calc(25%-10px)]" />
+				<img
+					src="/images/bride-squad/10.webp"
+					alt="Bride Squad 10"
+					class="w-[calc(25%-10px)] max-h-[230px]"
+				/>
+				<img
+					src="/images/bride-squad/11.webp"
+					alt="Bride Squad 11"
+					class="w-[calc(12%-10px)] max-h-[230px]"
+				/>
+				<img
+					src="/images/bride-squad/12.webp"
+					alt="Bride Squad 12"
+					class="w-[calc(23%-10px)] max-h-[230px]"
+				/>
+				<img
+					src="/images/bride-squad/13.webp"
+					alt="Bride Squad 13"
+					class="w-[calc(15%-10px)] max-h-[230px]"
+				/>
+				<img
+					src="/images/bride-squad/14.webp"
+					alt="Bride Squad 14"
+					class="w-[calc(25%-10px)] max-h-[230px]"
+				/>
 			</div>
 		</div>
 	</div>
