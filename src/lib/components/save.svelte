@@ -72,7 +72,9 @@
 <div id="save-the-date" class="grid md:grid-cols-2 md:min-h-svh">
 	<div class="md:min-h-svh py-[100px] px-[30px] md:px-[60px] md:py-[60px]">
 		{#if !data.isLateInvite}
-			<h3 class="font-serif text-[25px] font-medium mb-[60px] md:text-[30px]">{inviteName}.</h3>
+			<h3 class="font-serif text-[25px] font-medium mb-[60px] md:text-[30px]">
+				Dear {inviteName},
+			</h3>
 			<p class="text-[20px] font-thin">
 				We're Over the Moon!
 				<br />
