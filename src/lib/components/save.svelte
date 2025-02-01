@@ -10,6 +10,7 @@
 	export let data: InviteData;
 	let open = false;
 	let withPlusOne = false;
+	let inviteName = data.name;
 
 	const formattedDate = dayjs(data.deadline || new Date('2024-08-31 12:00:00.000Z')).format(
 		'MMMM DD, YYYY'
@@ -65,12 +66,13 @@
 		? `Yes, we can make it on Feb 28 for the Welcome Dinner`
 		: 'Yes, I can make it on Feb 28 for the Welcome Dinner';
 	$: answerText = data.going ? 'See you there!' : 'We will miss you!';
+	$: inviteName = data.partnerName ? `${data.name} & ${data.partnerName}` : data.name;
 </script>
 
 <div id="save-the-date" class="grid md:grid-cols-2 md:min-h-svh">
 	<div class="md:min-h-svh py-[100px] px-[30px] md:px-[60px] md:py-[60px]">
 		{#if !data.isLateInvite}
-			<h3 class="font-serif text-[50px] font-medium mb-[60px] md:text-[60px]">Hi {data.name}.</h3>
+			<h3 class="font-serif text-[25px] font-medium mb-[60px] md:text-[30px]">{inviteName}.</h3>
 			<p class="text-[20px] font-thin">
 				We're Over the Moon!
 				<br />

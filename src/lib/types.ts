@@ -10,4 +10,5 @@ export type InviteData = {
 	bringPlusOne: boolean;
 	deadline: string;
 	isLateInvite: boolean;
+	partnerName?: string;
 };

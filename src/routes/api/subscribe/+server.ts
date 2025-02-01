@@ -5,9 +5,7 @@ import { ClientResponseError } from 'pocketbase';
 export const prerender = false;
 
 export const POST: RequestHandler = async ({ request, locals, cookies }) => {
-	console.log('here');
 	const { email } = await request.json();
-	console.log('email', email);
 	const code = cookies.get('code');
 
 	try {
